@@ -1,0 +1,11 @@
+C:\Users\alan2\Desktop\Proyecto\Proyecto\bin\Debug\Proyecto.exe.config
+C:\Users\alan2\Desktop\Proyecto\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\alan2\Desktop\Proyecto\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.AssemblyReference.cache
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.Properties.Resources.resources
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.GenerateResource.cache
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.exe
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.PrincipalForm.resources
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.MenuForm.resources
