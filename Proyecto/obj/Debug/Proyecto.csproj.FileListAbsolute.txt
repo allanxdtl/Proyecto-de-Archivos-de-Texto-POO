@@ -9,3 +9,4 @@ C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.exe
 C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
 C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.PrincipalForm.resources
 C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.MenuForm.resources
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.CuentaForm.resources

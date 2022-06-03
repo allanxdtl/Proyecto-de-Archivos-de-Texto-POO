@@ -10,15 +10,33 @@ namespace Proyecto
     public class ClsMesa
     {
         private StreamWriter writer;
-        private string NumeroDeMesa;
+        private string numeroDeMesa;
         private double Total;
+        private bool cuentaCerrada;
+
+        public string NumeroDeMesa
+        {
+            get { return numeroDeMesa; }
+            set { numeroDeMesa = value; }
+        }
+
+        public bool CuentaCerrada
+        {
+            get { return cuentaCerrada; }
+            set { cuentaCerrada = value; }
+        }
+
+        public double TotalAPagar
+        {
+            get { return Total; }
+        }
 
         public ClsMesa(string numero)
         {
             Total = 0;
-            NumeroDeMesa = numero;
-            writer = File.AppendText($"cuentaMesa{numero}.txt");
-
+            numeroDeMesa = numero;
+            cuentaCerrada = false;
+            writer = File.CreateText($"ArchivosTexto/cuentaMesa{numero}.txt");
         }
 
         public void AñadirProducto(string nombre, double costo)
@@ -31,6 +49,7 @@ namespace Proyecto
         {
             writer.WriteLine($"Total a pagar: {Total}");
             writer.Close();
+            cuentaCerrada = true;
         }
     }
 }

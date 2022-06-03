@@ -99,6 +99,7 @@ namespace Proyecto
             this.bttnAddProducto.TabIndex = 12;
             this.bttnAddProducto.Text = "Añadir Producto a la cuenta";
             this.bttnAddProducto.UseVisualStyleBackColor = true;
+            this.bttnAddProducto.Click += new System.EventHandler(this.bttnAddProducto_Click);
             // 
             // MenuForm
             // 

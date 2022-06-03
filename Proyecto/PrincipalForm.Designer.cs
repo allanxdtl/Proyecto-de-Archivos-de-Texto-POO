@@ -52,6 +52,7 @@ namespace Proyecto
             this.bttnAddMesa = new System.Windows.Forms.Button();
             this.bttnCobrar = new System.Windows.Forms.Button();
             this.cmbMesa = new System.Windows.Forms.ComboBox();
+            this.cmbMesaCobrar = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +89,7 @@ namespace Proyecto
             this.verMenúToolStripMenuItem.Name = "verMenúToolStripMenuItem";
             this.verMenúToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verMenúToolStripMenuItem.Text = "Ver Menú";
+            this.verMenúToolStripMenuItem.Click += new System.EventHandler(this.verMenúToolStripMenuItem_Click);
             // 
             // añadirProductoToolStripMenuItem
             // 
@@ -252,16 +254,27 @@ namespace Proyecto
             this.bttnCobrar.TabIndex = 11;
             this.bttnCobrar.Text = "Cobrar a mesa";
             this.bttnCobrar.UseVisualStyleBackColor = true;
+            this.bttnCobrar.Click += new System.EventHandler(this.bttnCobrar_Click);
             // 
             // cmbMesa
             // 
             this.cmbMesa.FormattingEnabled = true;
-            this.cmbMesa.Location = new System.Drawing.Point(35, 344);
+            this.cmbMesa.Location = new System.Drawing.Point(59, 344);
             this.cmbMesa.Name = "cmbMesa";
             this.cmbMesa.Size = new System.Drawing.Size(121, 24);
             this.cmbMesa.TabIndex = 12;
             this.cmbMesa.Visible = false;
             this.cmbMesa.SelectedIndexChanged += new System.EventHandler(this.cmbMesa_SelectedIndexChanged);
+            // 
+            // cmbMesaCobrar
+            // 
+            this.cmbMesaCobrar.FormattingEnabled = true;
+            this.cmbMesaCobrar.Location = new System.Drawing.Point(288, 344);
+            this.cmbMesaCobrar.Name = "cmbMesaCobrar";
+            this.cmbMesaCobrar.Size = new System.Drawing.Size(121, 24);
+            this.cmbMesaCobrar.TabIndex = 13;
+            this.cmbMesaCobrar.Visible = false;
+            this.cmbMesaCobrar.SelectedIndexChanged += new System.EventHandler(this.cmbMesaCobrar_SelectedIndexChanged);
             // 
             // PrincipalForm
             // 
@@ -270,6 +283,7 @@ namespace Proyecto
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(501, 391);
             this.ControlBox = false;
+            this.Controls.Add(this.cmbMesaCobrar);
             this.Controls.Add(this.cmbMesa);
             this.Controls.Add(this.bttnCobrar);
             this.Controls.Add(this.bttnAddMesa);
@@ -319,6 +333,7 @@ namespace Proyecto
         private System.Windows.Forms.Button bttnAddMesa;
         private System.Windows.Forms.Button bttnCobrar;
         private System.Windows.Forms.ComboBox cmbMesa;
+        private System.Windows.Forms.ComboBox cmbMesaCobrar;
     }
 }
 

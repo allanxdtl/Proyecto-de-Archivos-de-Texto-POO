@@ -1,0 +1,2 @@
+Pollo, 50
+Total a pagar: 50

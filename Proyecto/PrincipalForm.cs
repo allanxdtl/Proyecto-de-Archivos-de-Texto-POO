@@ -15,62 +15,89 @@ namespace Proyecto
         public PrincipalForm()
         {
             InitializeComponent();
+            for(int i=0; i<9; i++)
+            {
+                mesas.Add(null);
+            }
         }
 
         //Lista estatica de las mesas, se utiliza para llevar la cuenta de manera global en todo el sistema
         public static List<ClsMesa> mesas = new List<ClsMesa>();
 
+        //Con esta variable puedo controlar que tipo de menu se vera de acuerdo a la seleccion del usuario
+        public static bool menu = true;
+
         //Variables para saber si una mesa esta ocupada o no
         //Si el valor es cero es porque esta desocupada
         int mesa1=0, mesa2=0, mesa3=0, mesa4=0, mesa5=0, mesa6=0, mesa7=0, mesa8=0, mesa9=0;
-        bool activo = true;
+        //Esta variable nos indica si alguna mesa esta ocupada
+        public static int mesa;
 
         //Este método cambia el estado de la mesa
-        private void CambiarEstadoDeMesa(string numeromesa ,ref int estado, ref Button mesa, ref ComboBox cmb)
+        private void CambiarEstadoDeMesa(string numeromesa ,ref int estado, ref Button mesa, ref ComboBox cmbAdd, ref ComboBox cmbCob)
         {
             if (estado == 0)
             {
-
                 estado = 1;
                 mesa.BackColor = Color.Red;
-                cmb.Items.Add(numeromesa);
+                cmbAdd.Items.Add(numeromesa);
+                cmbCob.Items.Add(numeromesa);
             }
             else
             {
-                estado = 0;
-                mesa.BackColor = Color.Lime;
+                //Este bloque verifica si la mesa aun tiene la su cuenta abierta
+                //Si es asi, no deja desactivar la mesa hasta que se pague
+                string[] mesaArreglo = numeromesa.Split(' ');
+                int index = Convert.ToInt32(mesaArreglo[1])-1;
+                if (mesas[index] == null)
+                {
+                    MessageBox.Show("No puedes cambiar el estado de la mesa hasta que se cierre la cuenta");
+                }
+                else
+                {
+                    if (mesas[index].CuentaCerrada)
+                    {
+                        mesas[index] = null;
+                        estado = 0;
+                        mesa.BackColor = Color.Lime;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No es posible cambiar el estado de la mesa debido a que todavia tiene su cuenta abierta");
+                    }
+                }
             }
-            
         }
-
+        
         private void bttnAddMesa_Click(object sender, EventArgs e)
         {
             cmbMesa.Visible = true;
         }
 
-        private void cerrarSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void bttnCobrar_Click(object sender, EventArgs e)
         {
-            
+            cmbMesaCobrar.Visible = true;
         }
 
-        private void bttnMesa1_Click(object sender, EventArgs e)
+        private void cerrarSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CambiarEstadoDeMesa("Mesa 1", ref mesa1, ref bttnMesa1, ref cmbMesa);
+            Application.Exit();
         }
 
         private void cmbMesa_SelectedIndexChanged(object sender, EventArgs e)
         {
+            menu = true;
             switch (cmbMesa.Text)
             {
-                case "Mesa 1": mesas.Add(new ClsMesa("1")); break;
-                case "Mesa 2": mesas.Add(new ClsMesa("2")); break;
-                case "Mesa 3": mesas.Add(new ClsMesa("3")); break;
-                case "Mesa 4": mesas.Add(new ClsMesa("4")); break;
-                case "Mesa 5": mesas.Add(new ClsMesa("5")); break;
-                case "Mesa 6": mesas.Add(new ClsMesa("6")); break;
-                case "Mesa 7": mesas.Add(new ClsMesa("7")); break;
-                case "Mesa 8": mesas.Add(new ClsMesa("8")); break;
-                case "Mesa 9": mesas.Add(new ClsMesa("9")); break;
+                case "Mesa 1": mesas[0] = new ClsMesa("1"); mesa=0; break;
+                case "Mesa 2": mesas[1] = new ClsMesa("2"); mesa=1; break;
+                case "Mesa 3": mesas[2] = new ClsMesa("3"); mesa=2; break;
+                case "Mesa 4": mesas[3] = new ClsMesa("4"); mesa=3; break;
+                case "Mesa 5": mesas[4] = new ClsMesa("5"); mesa=4; break;
+                case "Mesa 6": mesas[5] = new ClsMesa("6"); mesa=5; break;
+                case "Mesa 7": mesas[6] = new ClsMesa("7"); mesa=6; break;
+                case "Mesa 8": mesas[7] = new ClsMesa("8"); mesa=7; break;
+                case "Mesa 9": mesas[8] = new ClsMesa("9"); mesa=8; break;
                 default: MessageBox.Show("Ocurrio un error"); break;
             }
             MenuForm seleccionador = new MenuForm();
@@ -78,44 +105,63 @@ namespace Proyecto
             cmbMesa.Visible = false;
         }
 
+        private void cmbMesaCobrar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CuentaForm cuenta = new CuentaForm();
+            cuenta.Show();
+            cmbMesaCobrar.Visible = false;
+        }
+
+        private void verMenúToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrincipalForm.menu = false;
+            MenuForm menu = new MenuForm();
+            menu.Show();
+        }
+
+        private void bttnMesa1_Click(object sender, EventArgs e)
+        {
+            CambiarEstadoDeMesa("Mesa 1", ref mesa1, ref bttnMesa1, ref cmbMesa, ref cmbMesaCobrar);
+        }
+
         private void bttnMesa2_Click(object sender, EventArgs e)
         {
-            CambiarEstadoDeMesa("Mesa 2", ref mesa2, ref bttnMesa2, ref cmbMesa);
+            CambiarEstadoDeMesa("Mesa 2", ref mesa2, ref bttnMesa2, ref cmbMesa, ref cmbMesaCobrar);
         }
 
         private void bttnMesa3_Click(object sender, EventArgs e)
         {
-            CambiarEstadoDeMesa("Mesa 3", ref mesa3, ref bttnMesa3, ref cmbMesa);
+            CambiarEstadoDeMesa("Mesa 3", ref mesa3, ref bttnMesa3, ref cmbMesa, ref cmbMesaCobrar);
         }
 
         private void bttnMesa4_Click(object sender, EventArgs e)
         {
-            CambiarEstadoDeMesa("Mesa 4", ref mesa4, ref bttnMesa4, ref cmbMesa);
+            CambiarEstadoDeMesa("Mesa 4", ref mesa4, ref bttnMesa4, ref cmbMesa, ref cmbMesaCobrar);
         }
 
         private void bttnMesa5_Click(object sender, EventArgs e)
         {
-            CambiarEstadoDeMesa("Mesa 5", ref mesa5, ref bttnMesa5, ref cmbMesa);
+            CambiarEstadoDeMesa("Mesa 5", ref mesa5, ref bttnMesa5, ref cmbMesa, ref cmbMesaCobrar);
         }
 
         private void bttnMesa6_Click(object sender, EventArgs e)
         {
-            CambiarEstadoDeMesa("Mesa 6", ref mesa6, ref bttnMesa6, ref cmbMesa);
+            CambiarEstadoDeMesa("Mesa 6", ref mesa6, ref bttnMesa6, ref cmbMesa, ref cmbMesaCobrar);
         }
 
         private void bttnMesa7_Click(object sender, EventArgs e)
         {
-            CambiarEstadoDeMesa("Mesa 7", ref mesa7, ref bttnMesa7, ref cmbMesa);
+            CambiarEstadoDeMesa("Mesa 7", ref mesa7, ref bttnMesa7, ref cmbMesa, ref cmbMesaCobrar);
         }
 
         private void bttnMesa8_Click(object sender, EventArgs e)
         {
-            CambiarEstadoDeMesa("Mesa 8", ref mesa8, ref bttnMesa8, ref cmbMesa);
+            CambiarEstadoDeMesa("Mesa 8", ref mesa8, ref bttnMesa8, ref cmbMesa, ref cmbMesaCobrar);
         }
 
         private void bttnMesa9_Click(object sender, EventArgs e)
         {
-            CambiarEstadoDeMesa("Mesa 9", ref mesa9, ref bttnMesa9, ref cmbMesa);
+            CambiarEstadoDeMesa("Mesa 9", ref mesa9, ref bttnMesa9, ref cmbMesa, ref cmbMesaCobrar);
         }
     }
 }
