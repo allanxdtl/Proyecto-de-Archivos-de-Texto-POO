@@ -60,6 +60,8 @@ namespace Proyecto
                         mesas[index] = null;
                         estado = 0;
                         mesa.BackColor = Color.Lime;
+                        cmbAdd.Items.Remove(numeromesa);
+                        cmbCob.Items.Remove(numeromesa);
                     }
                     else
                     {
