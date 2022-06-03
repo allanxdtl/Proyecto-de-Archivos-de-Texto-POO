@@ -96,24 +96,28 @@ namespace Proyecto
             this.añadirProductoToolStripMenuItem.Name = "añadirProductoToolStripMenuItem";
             this.añadirProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.añadirProductoToolStripMenuItem.Text = "Añadir Producto";
+            this.añadirProductoToolStripMenuItem.Click += new System.EventHandler(this.añadirProductoToolStripMenuItem_Click);
             // 
             // modificarProductoToolStripMenuItem
             // 
             this.modificarProductoToolStripMenuItem.Name = "modificarProductoToolStripMenuItem";
             this.modificarProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarProductoToolStripMenuItem.Text = "Modificar producto";
+            this.modificarProductoToolStripMenuItem.Click += new System.EventHandler(this.modificarProductoToolStripMenuItem_Click);
             // 
             // eliminarProductoToolStripMenuItem
             // 
             this.eliminarProductoToolStripMenuItem.Name = "eliminarProductoToolStripMenuItem";
             this.eliminarProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarProductoToolStripMenuItem.Text = "Eliminar Producto";
+            this.eliminarProductoToolStripMenuItem.Click += new System.EventHandler(this.eliminarProductoToolStripMenuItem_Click);
             // 
             // verCorteDeCajaToolStripMenuItem
             // 
             this.verCorteDeCajaToolStripMenuItem.Name = "verCorteDeCajaToolStripMenuItem";
             this.verCorteDeCajaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verCorteDeCajaToolStripMenuItem.Text = "Ver Corte de Caja";
+            this.verCorteDeCajaToolStripMenuItem.Click += new System.EventHandler(this.verCorteDeCajaToolStripMenuItem_Click);
             // 
             // cerrarSistemaToolStripMenuItem
             // 

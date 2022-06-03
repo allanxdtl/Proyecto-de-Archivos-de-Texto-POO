@@ -193,5 +193,29 @@ namespace Proyecto
         {
             CambiarEstadoDeMesa("Mesa 9", ref mesa9, ref bttnMesa9, ref cmbMesa, ref cmbMesaCobrar);
         }
+
+        private void añadirProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddProducForm add = new AddProducForm();
+            add.Show();
+        }
+
+        private void modificarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModProducForm mod = new ModProducForm();
+            mod.Show();
+        }
+
+        private void eliminarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DelProducForm del = new DelProducForm();
+            del.Show();
+        }
+
+        private void verCorteDeCajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CorteDeCajaForm corte = new CorteDeCajaForm();
+            corte.Show();
+        }
     }
 }
