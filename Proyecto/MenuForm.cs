@@ -20,11 +20,13 @@ namespace Proyecto
             {
                 bttnAddProducto.Visible = true;
                 label1.Text = "Favor de seleccionar el producto por favor";
+                bttnCerrarMenu.Location=new Point(214,342);
             }
             else
             {
                 bttnAddProducto.Visible = false;
                 label1.Text = "Productos disponibles para vender";
+                bttnCerrarMenu.Location = new Point(101, 342);
             }
             try
             {
