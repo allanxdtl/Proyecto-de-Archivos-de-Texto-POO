@@ -1,0 +1,4 @@
+Cabeza(tacos), 7
+Coca-Cola, 20
+Hamburguesa de carne grande, 110
+Total a pagar: 137

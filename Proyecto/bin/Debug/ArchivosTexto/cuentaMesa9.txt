@@ -1,3 +1,2 @@
-Enchiladas, 30
-Coca-Cola, 20
-Total a pagar: 50
+Agua natural, 10
+Total a pagar: 10

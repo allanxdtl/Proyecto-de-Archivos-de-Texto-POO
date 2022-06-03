@@ -1,0 +1,3 @@
+Enchiladas, 30
+Hamburguesa de carne grande, 110
+Total a pagar: 140

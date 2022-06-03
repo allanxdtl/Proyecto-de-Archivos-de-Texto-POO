@@ -40,6 +40,19 @@ namespace Proyecto
             {
                 estado = 1;
                 mesa.BackColor = Color.Red;
+                switch (numeromesa)
+                {
+                    case "Mesa 1": mesas[0] = new ClsMesa("1"); break;
+                    case "Mesa 2": mesas[1] = new ClsMesa("2"); break;
+                    case "Mesa 3": mesas[2] = new ClsMesa("3"); break;
+                    case "Mesa 4": mesas[3] = new ClsMesa("4"); break;
+                    case "Mesa 5": mesas[4] = new ClsMesa("5"); break;
+                    case "Mesa 6": mesas[5] = new ClsMesa("6"); break;
+                    case "Mesa 7": mesas[6] = new ClsMesa("7"); break;
+                    case "Mesa 8": mesas[7] = new ClsMesa("8"); break;
+                    case "Mesa 9": mesas[8] = new ClsMesa("9"); break;
+                    default: MessageBox.Show("Ocurrio un error"); break;
+                }
                 cmbAdd.Items.Add(numeromesa);
                 cmbCob.Items.Add(numeromesa);
             }
@@ -89,18 +102,21 @@ namespace Proyecto
         private void cmbMesa_SelectedIndexChanged(object sender, EventArgs e)
         {
             menu = true;
+            //Este bloque switch asigna el indice de la mesa a la variable estatica mesa
+            //Con esta variable se puede identificar la mesa fue de esta forma y poder trabajar con ella
+            //En este caso se pueden agregar productos a la mesa y cobrar la cuenta
+            //El bloque switch de el otro comboBox tiene la misma finalidad
             switch (cmbMesa.Text)
             {
-                case "Mesa 1": mesas[0] = new ClsMesa("1"); mesa=0; break;
-                case "Mesa 2": mesas[1] = new ClsMesa("2"); mesa=1; break;
-                case "Mesa 3": mesas[2] = new ClsMesa("3"); mesa=2; break;
-                case "Mesa 4": mesas[3] = new ClsMesa("4"); mesa=3; break;
-                case "Mesa 5": mesas[4] = new ClsMesa("5"); mesa=4; break;
-                case "Mesa 6": mesas[5] = new ClsMesa("6"); mesa=5; break;
-                case "Mesa 7": mesas[6] = new ClsMesa("7"); mesa=6; break;
-                case "Mesa 8": mesas[7] = new ClsMesa("8"); mesa=7; break;
-                case "Mesa 9": mesas[8] = new ClsMesa("9"); mesa=8; break;
-                default: MessageBox.Show("Ocurrio un error"); break;
+                case "Mesa 1": mesa = 0; break;
+                case "Mesa 2": mesa = 1; break;
+                case "Mesa 3": mesa = 2; break;
+                case "Mesa 4": mesa = 3; break;
+                case "Mesa 5": mesa = 4; break;
+                case "Mesa 6": mesa = 5; break;
+                case "Mesa 7": mesa = 6; break;
+                case "Mesa 8": mesa = 7; break;
+                case "Mesa 9": mesa = 8; break;
             }
             MenuForm seleccionador = new MenuForm();
             seleccionador.Show();
@@ -109,6 +125,18 @@ namespace Proyecto
 
         private void cmbMesaCobrar_SelectedIndexChanged(object sender, EventArgs e)
         {
+            switch (cmbMesaCobrar.Text)
+            {
+                case "Mesa 1": mesa = 0; break;
+                case "Mesa 2": mesa = 1; break;
+                case "Mesa 3": mesa = 2; break;
+                case "Mesa 4": mesa = 3; break;
+                case "Mesa 5": mesa = 4; break;
+                case "Mesa 6": mesa = 5; break;
+                case "Mesa 7": mesa = 6; break;
+                case "Mesa 8": mesa = 7; break;
+                case "Mesa 9": mesa = 8; break;
+            }
             CuentaForm cuenta = new CuentaForm();
             cuenta.Show();
             cmbMesaCobrar.Visible = false;

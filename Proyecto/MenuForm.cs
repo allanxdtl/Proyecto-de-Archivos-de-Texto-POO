@@ -65,7 +65,6 @@ namespace Proyecto
         private void bttnCerrarMenu_Click(object sender, EventArgs e)
         {
             Close();
-            //PrincipalForm.mesas[PrincipalForm.mesa].cerrarEscritor();
         }
     
 
