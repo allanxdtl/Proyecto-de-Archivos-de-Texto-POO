@@ -10,3 +10,7 @@ C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
 C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.PrincipalForm.resources
 C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.MenuForm.resources
 C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.CuentaForm.resources
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.AddProducForm.resources
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.CorteDeCajaForm.resources
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.DelProducForm.resources
+C:\Users\alan2\Desktop\Proyecto\Proyecto\obj\Debug\Proyecto.ModProducForm.resources

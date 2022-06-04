@@ -46,18 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProducForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProducForm.Designer.cs">
+      <DependentUpon>AddProducForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClsMesa.cs" />
+    <Compile Include="CorteDeCajaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CorteDeCajaForm.Designer.cs">
+      <DependentUpon>CorteDeCajaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CuentaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CuentaForm.Designer.cs">
       <DependentUpon>CuentaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DelProducForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelProducForm.Designer.cs">
+      <DependentUpon>DelProducForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuForm.Designer.cs">
       <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModProducForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModProducForm.Designer.cs">
+      <DependentUpon>ModProducForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PrincipalForm.cs">
       <SubType>Form</SubType>
@@ -67,11 +91,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddProducForm.resx">
+      <DependentUpon>AddProducForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CorteDeCajaForm.resx">
+      <DependentUpon>CorteDeCajaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CuentaForm.resx">
       <DependentUpon>CuentaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DelProducForm.resx">
+      <DependentUpon>DelProducForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModProducForm.resx">
+      <DependentUpon>ModProducForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>

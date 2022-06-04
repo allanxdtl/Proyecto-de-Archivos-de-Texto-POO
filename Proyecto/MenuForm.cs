@@ -48,6 +48,7 @@ namespace Proyecto
                     catch
                     {
                         noleido = false;
+                        reader.Close();
                     }
                 }
             }
@@ -67,7 +68,6 @@ namespace Proyecto
             Close();
         }
     
-
         private void bttnAddProducto_Click(object sender, EventArgs e)
         {
             int index = dataGridView1.SelectedRows[0].Index;
