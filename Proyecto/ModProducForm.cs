@@ -56,9 +56,11 @@ namespace Proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Primero guardo el producto modificado en la lista
             productos[dataGridView1.SelectedRows[0].Index] = $"{txtNombre.Text}, {txtPrecio.Text}";
             try
             {
+                //Aqui paso la lista modificada al archivo de texto sobreescribiendolo
                 StreamWriter writer = File.CreateText("ArchivosTexto/menu.txt");
                 for(int i=0; i<productos.Count; i++)
                 {
@@ -66,6 +68,7 @@ namespace Proyecto
                 }
                 writer.Close();
                 MessageBox.Show("El producto ha sido modidicado con exito!","Ya esta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //Aqui se actualiza el menú modificado
                 dataGridView1.Rows.Clear();
                 try
                 {
