@@ -23,6 +23,7 @@ namespace Proyecto
             try
             {
                 reader = File.OpenText("ArchivosTexto/menu.txt");
+                productos = new List<string>();
                 while (noleido)
                 {
                     try
@@ -46,7 +47,7 @@ namespace Proyecto
 
         readonly StreamReader reader;
         StreamWriter writer;
-        public static List<string> productos = new List<string>();public static List<int> precio = new List<int>();
+        public static List<string> productos;
 
         private void bttnClose_Click(object sender, EventArgs e)
         {

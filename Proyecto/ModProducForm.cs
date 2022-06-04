@@ -62,7 +62,7 @@ namespace Proyecto
             {
                 //Aqui paso la lista modificada al archivo de texto sobreescribiendolo
                 StreamWriter writer = File.CreateText("ArchivosTexto/menu.txt");
-                for(int i=0; i<productos.Count; i++)
+                for(int i=0; i<productos.Count-1; i++)
                 {
                     writer.WriteLine(productos[i]);
                 }
@@ -109,6 +109,7 @@ namespace Proyecto
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //Este sirve para mandar el contenido seleccionado a los textBox y que el usuario pueda modificarlo
             try
             {
                 txtNombre.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
