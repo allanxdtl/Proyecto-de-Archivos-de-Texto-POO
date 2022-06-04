@@ -1,7 +1,7 @@
 Coca-Cola, 20
 Pollo, 50
-Orden chica de boneless, 125
-Pizza de peperoni, 150
+Orden boneless (150g),  130
+Pizza de Peperoni Mediana, 135
 Hamburguesa de carne grande, 110
 Tacos de Tripa, 7
 Cabeza(vaso), 30
@@ -15,6 +15,7 @@ Agua de horchata, 20
 Agua de Jamaica, 20
 Pastel(Rebanada), 25
 HotCakes(dos), 30 
- Pizza con piña, 160
+Pizza con piña, 160
 Pizza Mexicana, 200
-nonono, 25
+sinosino, 10
+
