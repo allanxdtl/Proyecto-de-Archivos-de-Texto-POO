@@ -56,54 +56,61 @@ namespace Proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Primero guardo el producto modificado en la lista
-            productos[dataGridView1.SelectedRows[0].Index] = $"{txtNombre.Text}, {txtPrecio.Text}";
             try
             {
-                //Aqui paso la lista modificada al archivo de texto sobreescribiendolo
-                StreamWriter writer = File.CreateText("ArchivosTexto/menu.txt");
-                for(int i=0; i<productos.Count-1; i++)
-                {
-                    writer.WriteLine(productos[i]);
-                }
-                writer.Close();
-                MessageBox.Show("El producto ha sido modidicado con exito!","Ya esta", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //Aqui se actualiza el menú modificado
-                dataGridView1.Rows.Clear();
+                //Primero guardo el producto modificado en la lista
+                productos[dataGridView1.SelectedRows[0].Index] = $"{txtNombre.Text}, {txtPrecio.Text}";
                 try
                 {
-                    StreamReader reader = File.OpenText("ArchivosTexto/menu.txt");
-                    int indice = 0;
-                    bool noleido = true;
-                    string linea;
-                    string[] separados;
-                    while (noleido)
+                    //Aqui paso la lista modificada al archivo de texto sobreescribiendolo
+                    StreamWriter writer = File.CreateText("ArchivosTexto/menu.txt");
+                    for (int i = 0; i < productos.Count - 1; i++)
                     {
-                        try
+                        writer.WriteLine(productos[i]);
+                    }
+                    writer.Close();
+                    MessageBox.Show("El producto ha sido modidicado con exito!", "Ya esta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //Aqui se actualiza el menú modificado
+                    dataGridView1.Rows.Clear();
+                    try
+                    {
+                        StreamReader reader = File.OpenText("ArchivosTexto/menu.txt");
+                        int indice = 0;
+                        bool noleido = true;
+                        string linea;
+                        string[] separados;
+                        while (noleido)
                         {
-                            indice = dataGridView1.Rows.Add();
-                            linea = reader.ReadLine();
-                            productos.Add(linea);
-                            separados = linea.Split(',');
-                            dataGridView1.Rows[indice].Cells[0].Value = separados[0];
-                            dataGridView1.Rows[indice].Cells[1].Value = separados[1];
-                        }
-                        catch
-                        {
-                            noleido = false;
-                            reader.Close();
+                            try
+                            {
+                                indice = dataGridView1.Rows.Add();
+                                linea = reader.ReadLine();
+                                productos.Add(linea);
+                                separados = linea.Split(',');
+                                dataGridView1.Rows[indice].Cells[0].Value = separados[0];
+                                dataGridView1.Rows[indice].Cells[1].Value = separados[1];
+                            }
+                            catch
+                            {
+                                noleido = false;
+                                reader.Close();
+                            }
                         }
                     }
+                    catch (FileNotFoundException)
+                    {
+                        MessageBox.Show("El archivo no ha sido encontrado");
+                    }
                 }
-                catch (FileNotFoundException)
+                catch (Exception)
                 {
-                    MessageBox.Show("El archivo no ha sido encontrado");
+
+                    MessageBox.Show("Ocurrio un error");
                 }
             }
-            catch (Exception)
+            catch
             {
-
-                MessageBox.Show("Ocurrio un error");
+                MessageBox.Show("Por favor selecciona el renglon completo", "Por favor...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

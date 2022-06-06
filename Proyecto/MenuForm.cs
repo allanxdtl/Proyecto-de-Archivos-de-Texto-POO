@@ -70,10 +70,17 @@ namespace Proyecto
     
         private void bttnAddProducto_Click(object sender, EventArgs e)
         {
-            int index = dataGridView1.SelectedRows[0].Index;
-            string producto = dataGridView1.Rows[index].Cells[0].Value.ToString();
-            double costo = Convert.ToDouble(dataGridView1.Rows[index].Cells[1].Value);
-            PrincipalForm.mesas[PrincipalForm.mesa].AñadirProducto(producto, costo);
+            try
+            {
+                int index = dataGridView1.SelectedRows[0].Index;
+                string producto = dataGridView1.Rows[index].Cells[0].Value.ToString();
+                double costo = Convert.ToDouble(dataGridView1.Rows[index].Cells[1].Value);
+                PrincipalForm.mesas[PrincipalForm.mesa].AñadirProducto(producto, costo);
+            }
+            catch
+            {
+                MessageBox.Show("Por favor selecciona el renglon completo","Por favor...", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

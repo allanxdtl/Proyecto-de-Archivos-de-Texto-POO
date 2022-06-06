@@ -205,6 +205,16 @@ namespace Proyecto
             CambiarEstadoDeMesa("Mesa 5", ref mesa5, ref bttnMesa5, ref cmbMesa, ref cmbMesaCobrar);
         }
 
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            lblEstado.Text = "Verde significa desocupado, rojo siginifa ocupado";
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            lblEstado.Text = "";
+        }
+
         private void bttnMesa6_Click(object sender, EventArgs e)
         {
             CambiarEstadoDeMesa("Mesa 6", ref mesa6, ref bttnMesa6, ref cmbMesa, ref cmbMesaCobrar);

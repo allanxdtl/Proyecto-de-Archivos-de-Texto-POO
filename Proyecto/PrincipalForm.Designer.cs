@@ -54,6 +54,7 @@ namespace Proyecto
             this.cmbMesa = new System.Windows.Forms.ComboBox();
             this.cmbMesaCobrar = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,42 +89,42 @@ namespace Proyecto
             // verMenúToolStripMenuItem
             // 
             this.verMenúToolStripMenuItem.Name = "verMenúToolStripMenuItem";
-            this.verMenúToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verMenúToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.verMenúToolStripMenuItem.Text = "Ver Menú";
             this.verMenúToolStripMenuItem.Click += new System.EventHandler(this.verMenúToolStripMenuItem_Click);
             // 
             // añadirProductoToolStripMenuItem
             // 
             this.añadirProductoToolStripMenuItem.Name = "añadirProductoToolStripMenuItem";
-            this.añadirProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.añadirProductoToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.añadirProductoToolStripMenuItem.Text = "Añadir Producto";
             this.añadirProductoToolStripMenuItem.Click += new System.EventHandler(this.añadirProductoToolStripMenuItem_Click);
             // 
             // modificarProductoToolStripMenuItem
             // 
             this.modificarProductoToolStripMenuItem.Name = "modificarProductoToolStripMenuItem";
-            this.modificarProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarProductoToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.modificarProductoToolStripMenuItem.Text = "Modificar producto";
             this.modificarProductoToolStripMenuItem.Click += new System.EventHandler(this.modificarProductoToolStripMenuItem_Click);
             // 
             // eliminarProductoToolStripMenuItem
             // 
             this.eliminarProductoToolStripMenuItem.Name = "eliminarProductoToolStripMenuItem";
-            this.eliminarProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarProductoToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.eliminarProductoToolStripMenuItem.Text = "Eliminar Producto";
             this.eliminarProductoToolStripMenuItem.Click += new System.EventHandler(this.eliminarProductoToolStripMenuItem_Click);
             // 
             // verCorteDeCajaToolStripMenuItem
             // 
             this.verCorteDeCajaToolStripMenuItem.Name = "verCorteDeCajaToolStripMenuItem";
-            this.verCorteDeCajaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verCorteDeCajaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.verCorteDeCajaToolStripMenuItem.Text = "Ver Corte de Caja";
             this.verCorteDeCajaToolStripMenuItem.Click += new System.EventHandler(this.verCorteDeCajaToolStripMenuItem_Click);
             // 
             // cerrarSistemaToolStripMenuItem
             // 
             this.cerrarSistemaToolStripMenuItem.Name = "cerrarSistemaToolStripMenuItem";
-            this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.cerrarSistemaToolStripMenuItem.Text = "Cerrar Sistema";
             this.cerrarSistemaToolStripMenuItem.Click += new System.EventHandler(this.cerrarSistemaToolStripMenuItem_Click);
             // 
@@ -284,11 +285,23 @@ namespace Proyecto
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
+            this.lblEstado.BackColor = System.Drawing.Color.Maroon;
+            this.lblEstado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblEstado.Location = new System.Drawing.Point(107, 37);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(11, 16);
+            this.lblEstado.Size = new System.Drawing.Size(0, 16);
             this.lblEstado.TabIndex = 14;
-            this.lblEstado.Text = "l";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(458, 34);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(18, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "?";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // PrincipalForm
             // 
@@ -297,6 +310,7 @@ namespace Proyecto
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(501, 411);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.cmbMesaCobrar);
             this.Controls.Add(this.cmbMesa);
@@ -350,6 +364,7 @@ namespace Proyecto
         private System.Windows.Forms.ComboBox cmbMesa;
         private System.Windows.Forms.ComboBox cmbMesaCobrar;
         private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Button button1;
     }
 }
 
