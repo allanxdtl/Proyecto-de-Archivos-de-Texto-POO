@@ -1,0 +1,3 @@
+Coca-Cola, 20
+Pollo, 50
+Total a pagar: 70

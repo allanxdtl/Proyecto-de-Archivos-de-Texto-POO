@@ -1,0 +1,4 @@
+Pollo, 50
+Pizza Mexicana, 200
+Coca-Cola, 20
+Total a pagar: 270

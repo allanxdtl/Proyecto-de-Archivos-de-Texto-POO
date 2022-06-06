@@ -1,5 +1,1 @@
-HotCakes(dos), 30
-Tacos de asada, 7
-Pizza de peperoni, 150
-Agua de Jamaica, 20
-Total a pagar: 207
+Total a pagar: 0

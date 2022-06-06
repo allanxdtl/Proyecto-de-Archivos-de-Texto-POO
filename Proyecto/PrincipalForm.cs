@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -75,6 +76,7 @@ namespace Proyecto
                         mesa.BackColor = Color.Lime;
                         cmbAdd.Items.Remove(numeromesa);
                         cmbCob.Items.Remove(numeromesa);
+                        lblEstado.Text = "";
                     }
                     else
                     {
@@ -155,6 +157,19 @@ namespace Proyecto
             }
             CuentaForm cuenta = new CuentaForm();
             cuenta.Show();
+            Thread.Sleep(5000);
+            switch (cmbMesaCobrar.Text)
+            {
+                case "Mesa 1": lblEstado.Text = "La mesa 1 se acaba de desocupar, desactivala"; break;
+                case "Mesa 2": lblEstado.Text = "La mesa 2 se acaba de desocupar, desactivala"; break;
+                case "Mesa 3": lblEstado.Text = "La mesa 3 se acaba de desocupar, desactivala"; break;
+                case "Mesa 4": lblEstado.Text = "La mesa 4 se acaba de desocupar, desactivala"; break;
+                case "Mesa 5": lblEstado.Text = "La mesa 5 se acaba de desocupar, desactivala"; break;
+                case "Mesa 6": lblEstado.Text = "La mesa 6 se acaba de desocupar, desactivala"; break;
+                case "Mesa 7": lblEstado.Text = "La mesa 7 se acaba de desocupar, desactivala"; break;
+                case "Mesa 8": lblEstado.Text = "La mesa 8 se acaba de desocupar, desactivala"; break;
+                case "Mesa 9": lblEstado.Text = "La mesa 9 se acaba de desocupar, desactivala"; break;
+            }
             cmbMesaCobrar.Visible = false;
         }
 

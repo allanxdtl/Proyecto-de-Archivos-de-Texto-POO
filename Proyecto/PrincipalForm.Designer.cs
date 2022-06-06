@@ -53,6 +53,7 @@ namespace Proyecto
             this.bttnCobrar = new System.Windows.Forms.Button();
             this.cmbMesa = new System.Windows.Forms.ComboBox();
             this.cmbMesaCobrar = new System.Windows.Forms.ComboBox();
+            this.lblEstado = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,7 +135,7 @@ namespace Proyecto
             // bttnMesa1
             // 
             this.bttnMesa1.BackColor = System.Drawing.Color.Lime;
-            this.bttnMesa1.Location = new System.Drawing.Point(84, 47);
+            this.bttnMesa1.Location = new System.Drawing.Point(86, 66);
             this.bttnMesa1.Name = "bttnMesa1";
             this.bttnMesa1.Size = new System.Drawing.Size(84, 59);
             this.bttnMesa1.TabIndex = 1;
@@ -145,7 +146,7 @@ namespace Proyecto
             // bttnMesa6
             // 
             this.bttnMesa6.BackColor = System.Drawing.Color.Lime;
-            this.bttnMesa6.Location = new System.Drawing.Point(309, 129);
+            this.bttnMesa6.Location = new System.Drawing.Point(311, 148);
             this.bttnMesa6.Name = "bttnMesa6";
             this.bttnMesa6.Size = new System.Drawing.Size(84, 59);
             this.bttnMesa6.TabIndex = 2;
@@ -156,7 +157,7 @@ namespace Proyecto
             // bttnMesa3
             // 
             this.bttnMesa3.BackColor = System.Drawing.Color.Lime;
-            this.bttnMesa3.Location = new System.Drawing.Point(309, 47);
+            this.bttnMesa3.Location = new System.Drawing.Point(311, 66);
             this.bttnMesa3.Name = "bttnMesa3";
             this.bttnMesa3.Size = new System.Drawing.Size(84, 59);
             this.bttnMesa3.TabIndex = 3;
@@ -167,7 +168,7 @@ namespace Proyecto
             // bttnMesa8
             // 
             this.bttnMesa8.BackColor = System.Drawing.Color.Lime;
-            this.bttnMesa8.Location = new System.Drawing.Point(200, 211);
+            this.bttnMesa8.Location = new System.Drawing.Point(202, 230);
             this.bttnMesa8.Name = "bttnMesa8";
             this.bttnMesa8.Size = new System.Drawing.Size(84, 59);
             this.bttnMesa8.TabIndex = 4;
@@ -178,7 +179,7 @@ namespace Proyecto
             // bttnMesa5
             // 
             this.bttnMesa5.BackColor = System.Drawing.Color.Lime;
-            this.bttnMesa5.Location = new System.Drawing.Point(200, 129);
+            this.bttnMesa5.Location = new System.Drawing.Point(202, 148);
             this.bttnMesa5.Name = "bttnMesa5";
             this.bttnMesa5.Size = new System.Drawing.Size(84, 59);
             this.bttnMesa5.TabIndex = 5;
@@ -189,7 +190,7 @@ namespace Proyecto
             // bttnMesa2
             // 
             this.bttnMesa2.BackColor = System.Drawing.Color.Lime;
-            this.bttnMesa2.Location = new System.Drawing.Point(200, 47);
+            this.bttnMesa2.Location = new System.Drawing.Point(202, 66);
             this.bttnMesa2.Name = "bttnMesa2";
             this.bttnMesa2.Size = new System.Drawing.Size(84, 59);
             this.bttnMesa2.TabIndex = 6;
@@ -200,7 +201,7 @@ namespace Proyecto
             // bttnMesa7
             // 
             this.bttnMesa7.BackColor = System.Drawing.Color.Lime;
-            this.bttnMesa7.Location = new System.Drawing.Point(84, 211);
+            this.bttnMesa7.Location = new System.Drawing.Point(86, 230);
             this.bttnMesa7.Name = "bttnMesa7";
             this.bttnMesa7.Size = new System.Drawing.Size(84, 59);
             this.bttnMesa7.TabIndex = 7;
@@ -211,7 +212,7 @@ namespace Proyecto
             // bttnMesa4
             // 
             this.bttnMesa4.BackColor = System.Drawing.Color.Lime;
-            this.bttnMesa4.Location = new System.Drawing.Point(84, 129);
+            this.bttnMesa4.Location = new System.Drawing.Point(86, 148);
             this.bttnMesa4.Name = "bttnMesa4";
             this.bttnMesa4.Size = new System.Drawing.Size(84, 59);
             this.bttnMesa4.TabIndex = 8;
@@ -222,7 +223,7 @@ namespace Proyecto
             // bttnMesa9
             // 
             this.bttnMesa9.BackColor = System.Drawing.Color.Lime;
-            this.bttnMesa9.Location = new System.Drawing.Point(309, 211);
+            this.bttnMesa9.Location = new System.Drawing.Point(311, 230);
             this.bttnMesa9.Name = "bttnMesa9";
             this.bttnMesa9.Size = new System.Drawing.Size(84, 59);
             this.bttnMesa9.TabIndex = 9;
@@ -237,7 +238,7 @@ namespace Proyecto
             this.bttnAddMesa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.bttnAddMesa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bttnAddMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnAddMesa.Location = new System.Drawing.Point(35, 290);
+            this.bttnAddMesa.Location = new System.Drawing.Point(37, 309);
             this.bttnAddMesa.Name = "bttnAddMesa";
             this.bttnAddMesa.Size = new System.Drawing.Size(191, 32);
             this.bttnAddMesa.TabIndex = 10;
@@ -252,7 +253,7 @@ namespace Proyecto
             this.bttnCobrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.bttnCobrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.bttnCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttnCobrar.Location = new System.Drawing.Point(253, 290);
+            this.bttnCobrar.Location = new System.Drawing.Point(255, 309);
             this.bttnCobrar.Name = "bttnCobrar";
             this.bttnCobrar.Size = new System.Drawing.Size(191, 32);
             this.bttnCobrar.TabIndex = 11;
@@ -263,7 +264,7 @@ namespace Proyecto
             // cmbMesa
             // 
             this.cmbMesa.FormattingEnabled = true;
-            this.cmbMesa.Location = new System.Drawing.Point(59, 344);
+            this.cmbMesa.Location = new System.Drawing.Point(61, 363);
             this.cmbMesa.Name = "cmbMesa";
             this.cmbMesa.Size = new System.Drawing.Size(121, 24);
             this.cmbMesa.TabIndex = 12;
@@ -273,20 +274,30 @@ namespace Proyecto
             // cmbMesaCobrar
             // 
             this.cmbMesaCobrar.FormattingEnabled = true;
-            this.cmbMesaCobrar.Location = new System.Drawing.Point(288, 344);
+            this.cmbMesaCobrar.Location = new System.Drawing.Point(290, 363);
             this.cmbMesaCobrar.Name = "cmbMesaCobrar";
             this.cmbMesaCobrar.Size = new System.Drawing.Size(121, 24);
             this.cmbMesaCobrar.TabIndex = 13;
             this.cmbMesaCobrar.Visible = false;
             this.cmbMesaCobrar.SelectedIndexChanged += new System.EventHandler(this.cmbMesaCobrar_SelectedIndexChanged);
             // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(107, 37);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(11, 16);
+            this.lblEstado.TabIndex = 14;
+            this.lblEstado.Text = "l";
+            // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(501, 391);
+            this.ClientSize = new System.Drawing.Size(501, 411);
             this.ControlBox = false;
+            this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.cmbMesaCobrar);
             this.Controls.Add(this.cmbMesa);
             this.Controls.Add(this.bttnCobrar);
@@ -338,6 +349,7 @@ namespace Proyecto
         private System.Windows.Forms.Button bttnCobrar;
         private System.Windows.Forms.ComboBox cmbMesa;
         private System.Windows.Forms.ComboBox cmbMesaCobrar;
+        private System.Windows.Forms.Label lblEstado;
     }
 }
 
