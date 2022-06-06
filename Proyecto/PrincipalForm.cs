@@ -83,6 +83,18 @@ namespace Proyecto
                 }
             }
         }
+
+        private bool VerificarEstado()
+        {
+            if (mesa1 == 1 || mesa2==1 || mesa3==1 || mesa4==1|| mesa5==1|| mesa6==1||mesa7==1||mesa8==1|mesa9==1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         
         private void bttnAddMesa_Click(object sender, EventArgs e)
         {
@@ -96,7 +108,11 @@ namespace Proyecto
 
         private void cerrarSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (VerificarEstado())
+                MessageBox.Show("No es posible cerrar la aplicacion debido a que todavia hay mesas ocupadas, asegurese de " +
+                    "cerrar las cuentas de esas mesas por favor", "No es posible cerrar", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            else
+                Application.Exit();
         }
 
         private void cmbMesa_SelectedIndexChanged(object sender, EventArgs e)

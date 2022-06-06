@@ -17,4 +17,4 @@ Pastel(Rebanada), 25
 HotCakes(dos), 30 
 Pizza con piña, 160
 Pizza Mexicana, 200
-SISISI, 30
+sisisi, 20
