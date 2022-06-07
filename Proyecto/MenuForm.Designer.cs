@@ -67,6 +67,7 @@ namespace Proyecto
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.label1.Location = new System.Drawing.Point(13, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -76,11 +77,12 @@ namespace Proyecto
             // 
             // bttnCerrarMenu
             // 
-            this.bttnCerrarMenu.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnCerrarMenu.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.bttnCerrarMenu.FlatAppearance.BorderSize = 2;
-            this.bttnCerrarMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnCerrarMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnCerrarMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnCerrarMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnCerrarMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnCerrarMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.bttnCerrarMenu.Location = new System.Drawing.Point(214, 342);
             this.bttnCerrarMenu.Name = "bttnCerrarMenu";
             this.bttnCerrarMenu.Size = new System.Drawing.Size(191, 64);
@@ -91,11 +93,12 @@ namespace Proyecto
             // 
             // bttnAddProducto
             // 
-            this.bttnAddProducto.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnAddProducto.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.bttnAddProducto.FlatAppearance.BorderSize = 2;
-            this.bttnAddProducto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnAddProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnAddProducto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnAddProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnAddProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnAddProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.bttnAddProducto.Location = new System.Drawing.Point(7, 342);
             this.bttnAddProducto.Name = "bttnAddProducto";
             this.bttnAddProducto.Size = new System.Drawing.Size(191, 64);
@@ -108,7 +111,7 @@ namespace Proyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(144)))));
             this.ClientSize = new System.Drawing.Size(428, 453);
             this.Controls.Add(this.bttnCerrarMenu);
             this.Controls.Add(this.bttnAddProducto);
@@ -117,7 +120,7 @@ namespace Proyecto
             this.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuForm";
-            this.Text = "MenuForm";
+            this.Text = "Menú";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

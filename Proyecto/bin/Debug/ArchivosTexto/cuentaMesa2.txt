@@ -1,1 +1,5 @@
-Total a pagar: 0
+Coca-Cola, 20
+Pollo, 50
+Orden boneless (150g), 130
+Pizza Mexicana, 200
+Total a pagar: 400

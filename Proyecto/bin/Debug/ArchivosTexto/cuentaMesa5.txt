@@ -1,2 +1,19 @@
-Enchiladas, 30
-Total a pagar: 30
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Coca-Cola, 20
+Total a pagar: 360

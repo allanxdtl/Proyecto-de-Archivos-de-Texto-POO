@@ -46,6 +46,7 @@ namespace Proyecto
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.label1.Location = new System.Drawing.Point(110, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 22);
@@ -56,6 +57,7 @@ namespace Proyecto
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.label2.Location = new System.Drawing.Point(12, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(288, 19);
@@ -90,11 +92,12 @@ namespace Proyecto
             // 
             // bttnCerrarMod
             // 
-            this.bttnCerrarMod.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnCerrarMod.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.bttnCerrarMod.FlatAppearance.BorderSize = 2;
-            this.bttnCerrarMod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnCerrarMod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnCerrarMod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnCerrarMod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnCerrarMod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnCerrarMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.bttnCerrarMod.Location = new System.Drawing.Point(252, 437);
             this.bttnCerrarMod.Name = "bttnCerrarMod";
             this.bttnCerrarMod.Size = new System.Drawing.Size(159, 37);
@@ -105,11 +108,12 @@ namespace Proyecto
             // 
             // button1
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.button1.Location = new System.Drawing.Point(29, 437);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 37);
@@ -130,6 +134,7 @@ namespace Proyecto
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.label3.Location = new System.Drawing.Point(281, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 19);
@@ -148,6 +153,7 @@ namespace Proyecto
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.label4.Location = new System.Drawing.Point(8, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 19);
@@ -158,7 +164,7 @@ namespace Proyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(144)))));
             this.ClientSize = new System.Drawing.Size(436, 497);
             this.ControlBox = false;
             this.Controls.Add(this.txtPrecio);
@@ -171,9 +177,10 @@ namespace Proyecto
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "ModProducForm";
-            this.Text = "ModProducForm";
+            this.Text = "Modificar producto del menú";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

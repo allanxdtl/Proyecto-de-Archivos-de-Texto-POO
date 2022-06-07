@@ -157,7 +157,6 @@ namespace Proyecto
             }
             CuentaForm cuenta = new CuentaForm();
             cuenta.Show();
-            Thread.Sleep(5000);
             switch (cmbMesaCobrar.Text)
             {
                 case "Mesa 1": lblEstado.Text = "La mesa 1 se acaba de desocupar, desactivala"; break;

@@ -89,42 +89,42 @@ namespace Proyecto
             // verMenúToolStripMenuItem
             // 
             this.verMenúToolStripMenuItem.Name = "verMenúToolStripMenuItem";
-            this.verMenúToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.verMenúToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verMenúToolStripMenuItem.Text = "Ver Menú";
             this.verMenúToolStripMenuItem.Click += new System.EventHandler(this.verMenúToolStripMenuItem_Click);
             // 
             // añadirProductoToolStripMenuItem
             // 
             this.añadirProductoToolStripMenuItem.Name = "añadirProductoToolStripMenuItem";
-            this.añadirProductoToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.añadirProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.añadirProductoToolStripMenuItem.Text = "Añadir Producto";
             this.añadirProductoToolStripMenuItem.Click += new System.EventHandler(this.añadirProductoToolStripMenuItem_Click);
             // 
             // modificarProductoToolStripMenuItem
             // 
             this.modificarProductoToolStripMenuItem.Name = "modificarProductoToolStripMenuItem";
-            this.modificarProductoToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.modificarProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarProductoToolStripMenuItem.Text = "Modificar producto";
             this.modificarProductoToolStripMenuItem.Click += new System.EventHandler(this.modificarProductoToolStripMenuItem_Click);
             // 
             // eliminarProductoToolStripMenuItem
             // 
             this.eliminarProductoToolStripMenuItem.Name = "eliminarProductoToolStripMenuItem";
-            this.eliminarProductoToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.eliminarProductoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarProductoToolStripMenuItem.Text = "Eliminar Producto";
             this.eliminarProductoToolStripMenuItem.Click += new System.EventHandler(this.eliminarProductoToolStripMenuItem_Click);
             // 
             // verCorteDeCajaToolStripMenuItem
             // 
             this.verCorteDeCajaToolStripMenuItem.Name = "verCorteDeCajaToolStripMenuItem";
-            this.verCorteDeCajaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.verCorteDeCajaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verCorteDeCajaToolStripMenuItem.Text = "Ver Corte de Caja";
             this.verCorteDeCajaToolStripMenuItem.Click += new System.EventHandler(this.verCorteDeCajaToolStripMenuItem_Click);
             // 
             // cerrarSistemaToolStripMenuItem
             // 
             this.cerrarSistemaToolStripMenuItem.Name = "cerrarSistemaToolStripMenuItem";
-            this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarSistemaToolStripMenuItem.Text = "Cerrar Sistema";
             this.cerrarSistemaToolStripMenuItem.Click += new System.EventHandler(this.cerrarSistemaToolStripMenuItem_Click);
             // 
@@ -234,11 +234,12 @@ namespace Proyecto
             // 
             // bttnAddMesa
             // 
-            this.bttnAddMesa.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnAddMesa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(0)))));
             this.bttnAddMesa.FlatAppearance.BorderSize = 2;
-            this.bttnAddMesa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnAddMesa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnAddMesa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnAddMesa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnAddMesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnAddMesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.bttnAddMesa.Location = new System.Drawing.Point(37, 309);
             this.bttnAddMesa.Name = "bttnAddMesa";
             this.bttnAddMesa.Size = new System.Drawing.Size(191, 32);
@@ -249,11 +250,12 @@ namespace Proyecto
             // 
             // bttnCobrar
             // 
-            this.bttnCobrar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnCobrar.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.bttnCobrar.FlatAppearance.BorderSize = 2;
-            this.bttnCobrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnCobrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnCobrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnCobrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnCobrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnCobrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.bttnCobrar.Location = new System.Drawing.Point(255, 309);
             this.bttnCobrar.Name = "bttnCobrar";
             this.bttnCobrar.Size = new System.Drawing.Size(191, 32);
@@ -307,7 +309,7 @@ namespace Proyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(144)))));
             this.ClientSize = new System.Drawing.Size(501, 411);
             this.ControlBox = false;
             this.Controls.Add(this.button1);

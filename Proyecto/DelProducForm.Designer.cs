@@ -42,6 +42,7 @@ namespace Proyecto
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.label1.Location = new System.Drawing.Point(36, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(380, 19);
@@ -55,6 +56,7 @@ namespace Proyecto
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
             this.Precio});
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(49, 73);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
@@ -75,11 +77,12 @@ namespace Proyecto
             // 
             // bttnCerrarMenu
             // 
-            this.bttnCerrarMenu.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnCerrarMenu.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.bttnCerrarMenu.FlatAppearance.BorderSize = 2;
-            this.bttnCerrarMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnCerrarMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnCerrarMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnCerrarMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnCerrarMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnCerrarMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.bttnCerrarMenu.Location = new System.Drawing.Point(240, 379);
             this.bttnCerrarMenu.Name = "bttnCerrarMenu";
             this.bttnCerrarMenu.Size = new System.Drawing.Size(191, 32);
@@ -90,11 +93,12 @@ namespace Proyecto
             // 
             // bttnEliminar
             // 
-            this.bttnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.bttnEliminar.FlatAppearance.BorderSize = 2;
-            this.bttnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.bttnEliminar.Location = new System.Drawing.Point(60, 379);
             this.bttnEliminar.Name = "bttnEliminar";
             this.bttnEliminar.Size = new System.Drawing.Size(151, 32);
@@ -107,7 +111,7 @@ namespace Proyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(144)))));
             this.ClientSize = new System.Drawing.Size(470, 464);
             this.ControlBox = false;
             this.Controls.Add(this.bttnCerrarMenu);
@@ -115,9 +119,10 @@ namespace Proyecto
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "DelProducForm";
-            this.Text = "DelProducForm";
+            this.Text = "Eliminar producto del menú";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -62,10 +62,10 @@ namespace Proyecto
             // 
             // bttnCerrarVentana
             // 
-            this.bttnCerrarVentana.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnCerrarVentana.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.bttnCerrarVentana.FlatAppearance.BorderSize = 2;
-            this.bttnCerrarVentana.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnCerrarVentana.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnCerrarVentana.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnCerrarVentana.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnCerrarVentana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnCerrarVentana.Location = new System.Drawing.Point(272, 259);
             this.bttnCerrarVentana.Name = "bttnCerrarVentana";
@@ -77,10 +77,10 @@ namespace Proyecto
             // 
             // bttnGuardar
             // 
-            this.bttnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.bttnGuardar.FlatAppearance.BorderSize = 2;
-            this.bttnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnGuardar.Location = new System.Drawing.Point(27, 259);
             this.bttnGuardar.Name = "bttnGuardar";
@@ -92,6 +92,7 @@ namespace Proyecto
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.opcionesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -123,7 +124,7 @@ namespace Proyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(144)))));
             this.ClientSize = new System.Drawing.Size(457, 314);
             this.ControlBox = false;
             this.Controls.Add(this.bttnGuardar);
@@ -132,10 +133,11 @@ namespace Proyecto
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Maiandra GD", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "CorteDeCajaForm";
-            this.Text = "CorteDeCajaForm";
+            this.Text = "Corte de Caja";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

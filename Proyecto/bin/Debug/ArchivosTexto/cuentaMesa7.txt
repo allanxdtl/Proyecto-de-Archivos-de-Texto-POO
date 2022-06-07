@@ -1,0 +1,2 @@
+Cabeza(vaso), 30
+Total a pagar: 30

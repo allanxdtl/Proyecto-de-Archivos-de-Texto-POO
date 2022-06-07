@@ -40,10 +40,10 @@ namespace Proyecto
             // 
             // bttnClose
             // 
-            this.bttnClose.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.bttnClose.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.bttnClose.FlatAppearance.BorderSize = 2;
-            this.bttnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.bttnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bttnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.bttnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.bttnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnClose.Location = new System.Drawing.Point(232, 169);
             this.bttnClose.Name = "bttnClose";
@@ -97,10 +97,10 @@ namespace Proyecto
             // 
             // button1
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(61, 169);
             this.button1.Name = "button1";
@@ -114,7 +114,7 @@ namespace Proyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(70)))), ((int)(((byte)(144)))));
             this.ClientSize = new System.Drawing.Size(428, 257);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
@@ -125,9 +125,10 @@ namespace Proyecto
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bttnClose);
             this.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(180)))));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddProducForm";
-            this.Text = "AddProducForm";
+            this.Text = "Añadir producto al menú";
             this.ResumeLayout(false);
             this.PerformLayout();
 

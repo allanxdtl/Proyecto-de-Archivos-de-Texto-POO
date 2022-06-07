@@ -1,0 +1,5 @@
+Cabeza(vaso), 30
+Tacos de Tripa, 7
+Enchiladas, 30
+HotCakes(dos), 30
+Total a pagar: 97
