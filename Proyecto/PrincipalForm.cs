@@ -108,15 +108,6 @@ namespace Proyecto
             cmbMesaCobrar.Visible = true;
         }
 
-        private void cerrarSistemaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (VerificarEstado())
-                MessageBox.Show("No es posible cerrar la aplicacion debido a que todavia hay mesas ocupadas, asegurese de " +
-                    "cerrar las cuentas de esas mesas por favor", "No es posible cerrar", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            else
-                Application.Exit();
-        }
-
         private void cmbMesa_SelectedIndexChanged(object sender, EventArgs e)
         {
             menu = true;
@@ -170,13 +161,6 @@ namespace Proyecto
                 case "Mesa 9": lblEstado.Text = "La mesa 9 se acaba de desocupar, desactivala"; break;
             }
             cmbMesaCobrar.Visible = false;
-        }
-
-        private void verMenúToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PrincipalForm.menu = false;
-            MenuForm menu = new MenuForm();
-            menu.Show();
         }
 
         private void bttnMesa1_Click(object sender, EventArgs e)
@@ -256,6 +240,22 @@ namespace Proyecto
         {
             CorteDeCajaForm corte = new CorteDeCajaForm();
             corte.Show();
+        }
+
+        private void verMenúToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrincipalForm.menu = false;
+            MenuForm menu = new MenuForm();
+            menu.Show();
+        }
+
+        private void cerrarSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (VerificarEstado())
+                MessageBox.Show("No es posible cerrar la aplicacion debido a que todavia hay mesas ocupadas, asegurese de " +
+                    "cerrar las cuentas de esas mesas por favor", "No es posible cerrar", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            else
+                Application.Exit();
         }
     }
 }

@@ -46,26 +46,30 @@ namespace Proyecto
         private void bttnGuardar_Click(object sender, EventArgs e)
         {
             saveFileDialog1.Title = "Escriba el nombre del archivo y seleccione donde desea que se guarde";
+            DateTime fecha = DateTime.Now;
+            saveFileDialog1.FileName = $"Corte del {fecha.Day}-{fecha.Month}-{fecha.Year} hora {fecha.Hour}:{fecha.Minute}.txt";
             try
             {
-                saveFileDialog1.ShowDialog();
-                if (File.Exists(saveFileDialog1.FileName))
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    string nombre = saveFileDialog1.FileName;
-                    StreamWriter saveArchivo = File.CreateText(nombre);
-                    saveArchivo.Write(richTextBox1.Text);
-                    saveArchivo.Flush();
-                    saveArchivo.Close();
-                    MessageBox.Show("El archivo ha sido guardado con exito","El archivo se guardo");
-                }
-                else
-                {
-                    string nombre = saveFileDialog1.FileName;
-                    StreamWriter saveArchivo = File.CreateText(nombre);
-                    saveArchivo.Write(richTextBox1.Text);
-                    saveArchivo.Flush();
-                    saveArchivo.Close();
-                    MessageBox.Show("El archivo ha sido guardado con exito", "El archivo se guardo");
+                    if (File.Exists(saveFileDialog1.FileName))
+                    {
+                        string nombre = saveFileDialog1.FileName;
+                        StreamWriter saveArchivo = File.CreateText(nombre);
+                        saveArchivo.Write(richTextBox1.Text);
+                        saveArchivo.Flush();
+                        saveArchivo.Close();
+                        MessageBox.Show("El archivo ha sido guardado con exito", "El archivo se guardo");
+                    }
+                    else
+                    {
+                        string nombre = saveFileDialog1.FileName;
+                        StreamWriter saveArchivo = File.CreateText(nombre);
+                        saveArchivo.Write(richTextBox1.Text);
+                        saveArchivo.Flush();
+                        saveArchivo.Close();
+                        MessageBox.Show("El archivo ha sido guardado con exito", "El archivo se guardo");
+                    }
                 }
             }
             catch (Exception)
