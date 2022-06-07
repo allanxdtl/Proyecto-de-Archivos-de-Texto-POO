@@ -1,3 +1,8 @@
-Coca-Cola, 20
 Pollo, 50
-Total a pagar: 70
+Pollo, 50
+Coca-Cola, 20
+Coca-Cola, 20
+sisisi, 52
+Agua natural, 10
+Agua natural, 10
+Total a pagar: 212

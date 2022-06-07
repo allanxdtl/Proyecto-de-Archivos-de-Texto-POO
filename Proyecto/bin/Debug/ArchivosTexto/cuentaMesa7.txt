@@ -1,2 +1,8 @@
-Cabeza(vaso), 30
-Total a pagar: 30
+Tacos de Tripa, 7
+Tacos de Tripa, 7
+Tacos de Tripa, 7
+Tacos de asada, 7
+Tacos de asada, 7
+Agua de horchata, 20
+Coca-Cola, 20
+Total a pagar: 75

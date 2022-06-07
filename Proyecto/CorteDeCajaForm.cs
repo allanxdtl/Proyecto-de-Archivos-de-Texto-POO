@@ -47,7 +47,7 @@ namespace Proyecto
         {
             saveFileDialog1.Title = "Escriba el nombre del archivo y seleccione donde desea que se guarde";
             DateTime fecha = DateTime.Now;
-            saveFileDialog1.FileName = $"Corte del {fecha.Day}-{fecha.Month}-{fecha.Year} hora {fecha.Hour}:{fecha.Minute}.txt";
+            saveFileDialog1.FileName = $"Corte del {fecha.Day}-{fecha.Month}-{fecha.Year} hora {fecha.Hour}-{fecha.Minute}.txt";
             try
             {
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)

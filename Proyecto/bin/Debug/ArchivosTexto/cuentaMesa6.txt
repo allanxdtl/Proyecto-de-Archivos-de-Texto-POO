@@ -1,5 +1,6 @@
+Coca-Cola, 20
+Cabeza(tacos), 7
+Cabeza(tacos), 7
+Cabeza(tacos), 7
 Cabeza(vaso), 30
-Tacos de Tripa, 7
-Enchiladas, 30
-HotCakes(dos), 30
-Total a pagar: 97
+Total a pagar: 71

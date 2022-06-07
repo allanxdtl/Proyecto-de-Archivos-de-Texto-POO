@@ -3,3 +3,5 @@ Se ha vendido el dia de hoy:
 760
 212
 75
+
+Se ha vendido hoy: 1118
